@@ -11,25 +11,39 @@ var rooms = [
   }
   ]
 
-function changeScreen() {
-alert('Change screen')
-}
 
 function App() {
+  const [screen,setScreen] = useState(0);
+  function changeScreen() {
+    if (screen == 0){
+      setScreen(1);
+    } 
+    else if (screen == 1)
+    {
+      setScreen(0);
+    }
+  }
 
   return (
     <>
     <div className='intro'>
       
+
       <div>
         
           <img src={viteLogo} className="logo logo-spin" alt="Vite logo" />
         
         
       </div>
-      <h1>Find the Treasure</h1>
+      { 
+        (screen == 0)
+        ?
+          (<h1>Find the Treasure</h1>)
+          : null
+      }
+
       <div className='description'>
-        {rooms[0].description}
+        {rooms[screen].description}
       </div>
       
           <div className="card">

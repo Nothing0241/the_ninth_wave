@@ -8,6 +8,10 @@
 .main {
   background: './assets/chest.png';
 }
+h1{
+  color: rgb(247, 249, 251);
+  background: black;
+}
 
 .logo {
   height: 12em;
@@ -36,7 +40,10 @@
     animation: logo-spin infinite 20s linear;
   }
 }
-
+.description
+{
+  color:\rgb(249, 246, 249);background: rgba(0, 0, 0, 0.451);
+}
 .card {
   padding: 2em;
 }

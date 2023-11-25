@@ -11,6 +11,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 a {
@@ -23,6 +24,7 @@ a:hover {
 }
 
 body {
+  background: url('./assets/Rainforst background.jpeg');
   margin: 0;
   display: flex;
   place-items: center;
@@ -56,7 +58,7 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: #fff;
     background-color: #ffffff;
   }
   a:hover {
