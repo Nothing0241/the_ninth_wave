@@ -1,46 +1,49 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
+import viteLogo from './assets/chest.png'
 import './App.css'
 var rooms = [
   {
-    description: "hello room 1",
+    description: "There is 2 rooms you will spawn in Room 1 and move to Room 2"
   },
   {
-    description: "hello room 2"
+    description: "Room 2"
   }
   ]
+
+function changeScreen() {
+alert('Change screen')
+}
+
 function App() {
-  const [count, setCount] = useState(0)
-  const room =useState(0)
+
   return (
     <>
+    <div className='intro'>
+      
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        
+          <img src={viteLogo} className="logo logo-spin" alt="Vite logo" />
+        
+        
       </div>
-      <h1>Find the treasure</h1>
-      <div>
-  {rooms[0].description}
-   </div>
-   <div>
-     {rooms[1].description}
-     </div>
-      <div className="card">
-      <button onClick={() => setroom((room) => 1 )}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <h1>Find the Treasure</h1>
+      <div className='description'>
+        {rooms[0].description}
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos 
-      </p>
+      
+          <div className="card">
+          <button onClick={() => changeScreen()}>
+
+              Play now! 
+            </button>
+            <p>
+            </p>
+          </div>
+          <p className="read-the-docs">
+
+          </p>
+          </div>
     </>
   )
 }

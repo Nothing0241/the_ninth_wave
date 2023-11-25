@@ -5,9 +5,13 @@
   text-align: center;
 }
 
+.main {
+  background: './assets/chest.png';
+}
+
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  height: 12em;
+  padding: 3em;
   will-change: filter;
   transition: filter 300ms;
 }
