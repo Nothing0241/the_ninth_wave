@@ -7,7 +7,7 @@
 
 .main {
   background: './assets/chest.png';
-  background: './Old Cartoon Room.jpeg';
+  if ( screen == 2 ) background: './Old Cartoon Room.jpeg';
 }
 h1{
   color: rgb(247, 249, 251);
