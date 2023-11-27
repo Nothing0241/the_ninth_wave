@@ -7,10 +7,13 @@ var rooms = [
     description: "There is 2 rooms you will spawn in Room 1 and move to Room 2"
   },
   {
-    description: "Room 2"
+    description: "Room 1 - Level 1"
+  },
+  {
+    description: "How do you get out of this room without dying?"
   }
   ]
-
+   
 
 function App() {
   const [screen,setScreen] = useState(0);
@@ -20,7 +23,7 @@ function App() {
     } 
     else if (screen == 1)
     {
-      setScreen(0);
+      setScreen(2);
     }
   }
 
