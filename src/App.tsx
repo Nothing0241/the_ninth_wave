@@ -35,7 +35,7 @@ function App() {
 
       <div>
         
-      { (screen == 0) ?
+      { (screen == 1) ?
       (
         <img src={viteLogo} className="logo logo-spin" alt="Vite logo" />
       ) : null
