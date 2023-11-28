@@ -19,7 +19,7 @@ function App() {
     } 
     else if (screen == 1)
     {
-      setScreen(0);
+      setScreen(2);
     }
   }
 
