@@ -29,10 +29,9 @@ function App() {
     }
   }
 
-  return (
-    <>
+  return 
     <div className='intro'>
-      
+    
 
       <div>
         
@@ -86,4 +85,4 @@ function App() {
 
      </p> 
 
-export default App
+
