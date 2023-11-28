@@ -35,7 +35,18 @@ function App() {
 
       <div>
         
-          <img src={viteLogo} className="logo logo-spin" alt="Vite logo" />
+      { (screen == 0) ?
+      (
+        <img src={viteLogo} className="logo logo-spin" alt="Vite logo" />
+      ) : null
+      }
+
+      { (screen == 1) ?
+        (
+          <img src={cartoonRoom} className="logo" alt="Cartoon Room" />
+        ) : null 
+      } 
+        
         
         
       </div>
