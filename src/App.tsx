@@ -3,6 +3,7 @@ import { useState } from 'react'
 import viteLogo from './assets/chest.png'
 import cartoonRoom from './assets/Old Cartoon Room.jpeg'
 
+import './App.css'
 var rooms = [
   {
     description: "There is 2 rooms you will spawn in Room 1 and move to Room 2"
@@ -56,25 +57,33 @@ function App() {
           (<h1>Find the Treasure</h1>)
           : null
       }
-
+      
       <div className='description'>
         {rooms[screen].description}
       </div>
-      
+         { (screen == 0 ) ?
           <div className="card">
           <button onClick={() => changeScreen()}>
-
               Play now! 
             </button>
-            <p>
-            </p>
           </div>
-          <p className="read-the-docs">
+          : null 
+         }
 
-          </p>
+      { (screen == 1) ?
+          <div className="card">
+            <button onClick={() => changeScreen('A')}>
+              Option A!
+            </button>
+            <button onClick={() => changeScreen('B')}>
+              Option B!
+            </button>
           </div>
-    </>
-  )
-}
+          : null
+      }
+         
+     <p className="read-the-docs">
+
+     </p> 
 
 export default App
