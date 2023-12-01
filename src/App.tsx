@@ -1,6 +1,8 @@
 import { useState } from 'react'
-import viteLogo from './assets.chest.png'
+import viteLogo from './assets/chest.png'
+
 import './App.css'
+
 var rooms = [
   {
     description: "There is 2 rooms you will spawn in Room 1 and move to Room 2"
@@ -25,6 +27,7 @@ function App() {
 
   return (
     <>
+    
     <div className='intro'>
       
 
@@ -44,22 +47,20 @@ function App() {
       <div className='description'>
         {rooms[screen].description}
       </div>
-      
+
+      { (screen == 0) ?
           <div className="card">
           <button onClick={() => changeScreen()}>
-
               Play now! 
             </button>
-            <p>
-            </p>
           </div>
-          <p className="read-the-docs">
-
-          </p>
-          </div>
-    </>
-  )
-    }
-
-  export default App
+          : null 
+      }
+   className="read-the-docs"
   
+  
+   </div>
+   </>
+   
+    }
+export default App; )
